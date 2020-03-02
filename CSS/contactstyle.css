@@ -3,10 +3,15 @@
     grid-template-areas: 
             "title title title"
             "nav nav nav"
-            "content1 content2 content3"
+            "content content content"
             "footer footer footer";
     grid-template-columns: 4% 92% 4%;
     grid-template-rows: 10% 10% 54% 26%;
     width: 100vw;
     height: 100vh;
+}
+#temptitle {
+    grid-area: content;
+    font-family: 'MyWebFont', anti, sans-serif;
+    margin-left: var(--leftandrightmargin);
 }

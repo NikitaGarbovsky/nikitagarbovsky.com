@@ -1,3 +1,6 @@
+:root {
+    --leftandrightmargin: 40px;
+}
 @font-face {
     font-family: 'MyWebFont';
     src: url('../Fonts/antipasto-pro-regular-trial-webfont.woff') format('woff');
@@ -11,7 +14,7 @@
         width:100%;
         grid-area: nav;
 }
-#navbar h5{
+#navbar h1{
     display: inline-block;
     margin-left: var(--leftandrightmargin);
     padding: 10px;

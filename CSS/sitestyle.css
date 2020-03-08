@@ -1,7 +1,7 @@
-:root {
-    --leftandrightmargin: 40px;
+:root {  
+    --leftandrightmargin: 40px; /* Global variable for page margins*/
 }
-@font-face {
+@font-face { /* Imported web font to be used as main front throughout the website*/
     font-family: 'MyWebFont';
     src: url('../Fonts/antipasto-pro-regular-trial-webfont.woff') format('woff');
 }

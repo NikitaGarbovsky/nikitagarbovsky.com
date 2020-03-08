@@ -1,6 +1,6 @@
 #container {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas: /* *I've used the default grid areas from the home page as placeholder until this page's layout is designed*/
             "title title title"
             "nav nav nav"
             "content content content"

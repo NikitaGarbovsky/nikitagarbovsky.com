@@ -1,17 +1,105 @@
 #container {
     display: grid;
-    grid-template-areas: /* *I've used the default grid areas from the home page as placeholder until this page's layout is designed*/
-            "title title title"
-            "nav nav nav"
-            "content content content"
-            "footer footer footer";
-    grid-template-columns: 4% 92% 4%;
-    grid-template-rows: 10% 10% 54% 26%;
-    width: 100vw;
-    height: 100vh;
+    grid-template-areas: 
+            "header"
+            "image"
+            "content1"
+            "content2"
+            "footer";
+    grid-template-rows: auto auto auto auto;
+    width: 100%;
+    height: 100%;
 }
-#temptitle {
-    grid-area: content;
+#mainImg {
+    grid-area: image;
+    height: 400px;
+}
+#mainImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    opacity: 80%;
+    filter: blur(2px);
+    object-position: 0 30%;
+}
+#centeredHeading {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
     font-family: 'MyWebFont', anti, sans-serif;
-    margin-left: var(--leftandrightmargin);
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+#aboutsectionContent1 {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+            'description image';
+    height: 100%;
+    grid-area: content1;
+    margin-left: var(--globalMargin);
+    margin-right: var(--globalMargin);
+    background-color: whitesmoke;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: relative;
+    top:100px;
+}
+#aboutsectionContent2 {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+            'image description';
+    height: 500px;
+    grid-area: content2;
+    margin-left: var(--globalMargin);
+    margin-right: var(--globalMargin);
+    background-color: whitesmoke;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: relative;
+    top:350px;
+}
+.images {
+    border-radius: 20px;
+    grid-area: image;
+    position: relative;
+}
+#imgofMe1 {
+    height: 500px;
+    transform: rotate(90deg);
+}
+#imgofMe2 {
+    height: 800px;
+    left: 80px;
+    bottom: 150px;
+}
+.personalInfoElement {
+    margin:20px 0px 0px 50px;
+    grid-area: description;
+}
+.personalInfoElement h1 {
+    text-align: center;
+    font-family: 'MyWebFont', anti, sans-serif;
+    font-size: 35px;
+    border: solid black 3px;
+    border-radius: 10px;
+}
+.personalInfoElement p {
+    font-family: 'ReadingFont', anti, sans-serif;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+}
+#rightSideInfoElement {
+    margin-left: 170px;
+    margin-right: 80px;
+}
+footer {
+    margin-top: 650px;
 }

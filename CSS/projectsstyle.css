@@ -1,0 +1,113 @@
+#container {
+    display: grid;
+    grid-template-areas: 
+            'header'
+            'image'
+            'content'
+            'footer';
+    grid-template-rows: auto auto auto auto;
+    width: 100%;
+    height: 100%;
+}
+#mainImg {
+    grid-area: image;
+    height: 400px;
+}
+#mainImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    opacity: 80%;
+    filter: blur(2px);
+    object-position: 0 30%;
+}
+#centeredHeading {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-family: 'MyWebFont', anti, sans-serif;;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+#content {
+    grid-area: content;
+    margin-left: var(--globalMargin);
+    margin-right: var(--globalMargin);
+}
+.preview {
+    height: 500px;
+    background-color: whitesmoke;  
+    position: relative;
+    bottom: 60px;
+    margin-bottom: 40px;
+    padding: 10px; 
+    border-radius: 20px;
+}
+.previewItem {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: 
+            'img description'
+            'heading links';
+    height: 100%;
+    width: 100%;
+        }
+        .previewImage {
+            grid-area: img;
+            width: 100%;
+        }
+        .previewImage img {
+            width: 100%;
+            transition: opacity .55s ease-in-out;
+            -moz-transition: opacity .55s ease-in-out;
+            -webkit-transition: opacity .55s ease-in-out;
+            border-radius: 20px;
+        }
+        .previewImage img:hover {
+            opacity: 0.6;
+            transition: opacity 1s ease-in-out;
+            -moz-transition: opacity 1s ease-in-out;
+            -webkit-transition: opacity 1s ease-in-out;
+        }​
+        .previewItemDescription {
+            grid-area: description;
+        }
+        .previewItemDescription p {
+            font-family: 'MyWebFont', anti, sans-serif;;
+            font-size: 30px;
+            margin: 140px 20px 0px 30px;
+        }
+        .previewItemDescription a {
+            color: cornflowerblue;
+            text-decoration: none;
+            font-family: 'MyWebFont', anti, sans-serif;;
+            font-size: 30px;
+        }
+        .previewItemHeading {
+            font-size: 40px;
+            font-family: 'MyWebFont', anti, sans-serif;;
+            grid-area: heading;
+            width: 40%;
+        }  
+        .logoLink {
+            grid-area: links;
+        }
+        .linksHeading {
+            font-family: 'MyWebFont', anti, sans-serif;
+            text-decoration: none;
+            font-size: 40px; 
+            width: 40%;
+            float: left; 
+            margin:10px 0px 0px 250px;  
+        }
+        .logoImage {
+            width: 10%;
+            float: right;
+            margin-right: 50px;
+        }

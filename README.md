@@ -13,7 +13,7 @@ Current implementations to add are:
 ~~1. Rewrite and restructure external CSS to accompany the future blog, projects, about and contact page.~~
 ~~2. Create a preview screen on the home page below the picture content once more projects have been started! This will display current projects and updates to my current projects.~~
 
-3.
+3. Add compatibility for all screen resolutions and mobile devices. 
 4. Implement a sort of CMS for a future blog site where I can easily add, delete and edit blog posts. (alot of work)
 5. Add functionality of contact form using JavaScript.
 6. Add some animations to different elements throughout the site, including utilizing users scrolling of each page to display 
